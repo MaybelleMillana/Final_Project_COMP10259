@@ -1,6 +1,32 @@
 /* Designing overall page*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
+
+/*button*/
+
+.sea-button {
+    background: linear-gradient(145deg, #0096c7, #00b4d8); /* Gradient for sea color */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sea-button:hover {
+    background: linear-gradient(145deg, #00b4d8, #0096c7); /* Reverse gradient on hover */
+    transform: scale(1.05);
+  }
+  
+  .sea-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }/*# sourceMappingURL=styles2.css.map */
 /*error*/
 .error1{
     color: rgb(81, 0, 255);
@@ -83,20 +109,7 @@ input, textarea {
     box-sizing: border-box;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: #00796b;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
-button:hover {
-    background: #004d40;
-}
 
 /*animation of the menu*/
 .navbar {
@@ -189,7 +202,7 @@ body{
 
 /* Designing Header */
 .header{
-	position: fixed;
+	
     left: 0;
     top: 0;
     width: 100%;

@@ -1,0 +1,128 @@
+$colorText:yellow;
+$colorOver:white;
+$background-color-btn: red;
+$border-style: dashed; // Border style
+$border-width: 2px; // Border width
+$border-color: #0096c7; // Border color
+
+$position:center;
+$measure:100%;
+
+.header .navbar ul li a {
+    color: $colorText !important;
+}
+.header .navbar ul li a:hover {
+    color: $colorOver !important;;
+}
+
+.sea-button {
+    background: $background-color-btn !important;
+}
+.form-container{
+        border: $border-width $border-style $border-color;
+}
+.buttonContact{
+    text-transform: uppercase; 
+    &::after {
+        content: "MIT"; // Add content for the pseudo-element
+        
+        height: 3px; // Thickness of the effect
+        transition: all 0.3s ease;
+        color:rgb(255, 247, 0);
+        font-weight: bold;
+    }
+
+    &:hover::after {
+        color:white;
+    }
+}
+.fix{
+    position: fixed;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $measure;
+    height: $measure;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: $position;
+    align-items: $position;
+    z-index: 1000;
+}
+.lightbox{
+    cursor: pointer;
+    
+}
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    margin-top: 90px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: $measure;
+    box-sizing: border-box;
+}
+
+video {
+    width: $measure;
+    height: auto;
+    display: block;
+}
+
+.btnC {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

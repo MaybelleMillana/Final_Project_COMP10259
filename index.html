@@ -7,6 +7,7 @@
     <title>Exocoetus volitans </title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
     <script src="js/script.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
 </head>
@@ -33,14 +34,14 @@
                 </div>
                 <nav class="navbar">
                     <ul id="nav-links">
-                        <li><a  href="index.html" id="home">Home</a></li>
+                        <li><a href="index.html" id="home">Home</a></li>
                         <li><a href="#about" id="about">About</a></li>
                         <li><a href="#features" id="features">Features</a></li>
                         <li><a href="#gallery" id="photos">Photos</a></li>
                         <li><a href="#vid" id="clips">Video Clips</a></li>
-                         <li><a href="honesty.html" id="honesty">Honesty Declaration</a></li>
-                         <li><a href="contact.html" id="contact">Contact</a></li>
-                        
+                        <li><a href="honesty.html" id="honesty">Honesty Declaration</a></li>
+                        <li><a href="contact.html" id="contact">Contact</a></li>
+
                         <!--<li><a href="contact.html">Contact Us</a></li>-->
                     </ul>
                 </nav>
@@ -124,97 +125,114 @@
             <h2 style="text-align: center;">Gallery</h2>
             <div class="gallery">
                 <div class="row1">
-                    <div class="photo-container">
-                        <img src="img/14732284_1299325726756006_2273276596595976121_n.jpg" title="fliying fish" alt="fish" id="img" width="500"
-                            height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 1 Information</div>
-                            </div>
+                    <div class="photo-container lightbox">
+                        <img src="img/14732284_1299325726756006_2273276596595976121_n.jpg" title="fliying fish"
+                            alt="fish" id="img" width="500" height="500">
+                        <div class="overlay">
+                            <div class="text">Sea fish one</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row1">
-                    <div class="photo-container">
+                    <div class="photo-container lightbox">
                         <img src="img/Exocoetus-volitans.jpg" title="fliying fish" alt="fish" id="img" width="500"
                             height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 2 Information</div>
-                            </div>
+                        <div class="overlay">
+                            <div class="text">Sea fish two</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row1">
-                    <div class="photo-container">
-                        <img src="img//glide-above-waves-flying-fish-0nt2gdqavj6hhaaa.jpg" title="fliying fish" alt="fish" id="img" width="500"
-                            height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 3 Information</div>
-                            </div>
+                    <div class="photo-container lightbox">
+                        <img src="img//glide-above-waves-flying-fish-0nt2gdqavj6hhaaa.jpg" title="fliying fish"
+                            alt="fish" id="img" width="500" height="500">
+                        <div class="overlay">
+                            <div class="text">Sea fish three</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="photo-container centerPht">
-                        <img src="img/shutterstock_blue_glaucus_0.jpg" title="fliying fish" alt="fish" id="img" width="500"
-                            height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 4 Information</div>
-                            </div>
+                    <div class="photo-container centerPht lightbox">
+                        <img src="img/shutterstock_blue_glaucus_0.jpg" title="fliying fish" alt="fish" id="img"
+                            width="500" height="500">
+                        <div class="overlay">
+                            <div class="text">Sea fish four</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="photo-container centerPht">
-                        <img src="img/posters-flying-gurnard-fish-underwater-over-sandy-seabed.jpg" title="fliying fish" alt="fish" id="img" width="500"
-                            height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 5 Information</div>
-                            </div>
+                    <div class="photo-container centerPht lightbox">
+                        <img src="img/posters-flying-gurnard-fish-underwater-over-sandy-seabed.jpg" title="fliying fish"
+                            alt="fish" id="img" width="500" height="500">
+                        <div class="overlay">
+                            <div class="text">Sea fish five</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="photo-container centerPht">
-                        <img src="img/Some_image.width-800.857e6da.jpg" title="fliying fish" alt="fish" id="img" width="500"
-                            height="500">
-                            <div class="overlay">
-                                <div class="text">Photo 6 Information</div>
-                            </div>
+                    <div class="photo-container centerPht lightbox">
+                        <img src="img/Some_image.width-800.857e6da.jpg" title="fliying fish" alt="fish" id="img"
+                            width="500" height="500">
+                        <div class="overlay">
+                            <div class="text">Sea fish six</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+            <!-- Lightbox gallery-->
+            <div id="lightbox" class="lightbox-overlay">
+
+                <span class="close">&times;</span>
+                <img class="lightbox-img" src="" alt="Lightbox Image">
+
+            </div>
 
         </section>
         <!-- Gallery Section End -->
 
         <!-- World Count Section Start -->
         <section class="count-section column" id="vid">
-            <h2 style="text-align: center;">Video Clips</h2>
+            <h2 style="text-align: center;">Video Clips </h2>
+            <h3 style="text-align: center;">slideshow </h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="img/Flying Fish Picked Off From Above And Below _ The Hunt _ BBC Earth.mp4"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="img/Facts- The Flying Fish.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="img/The Evolution of Flying Fish.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <button class="prev btnC">&lt;</button>
+                <button class="next btnC">&gt;</button>
+            </div>
 
-            <div class="gallery">
-                <div class="video-container">
-                    <video controls>
-                        <source src="img/Flying Fish Picked Off From Above And Below _ The Hunt _ BBC Earth.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video controls>
-                        <source src="img/Facts- The Flying Fish.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video controls>
-                        <source src="img/The Evolution of Flying Fish.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                  </section>
+        </section>
+        <div>
+            <a href="contact.html" class=""><button class="sea-button " href="contact.html">Contact</button></a>
+
+        </div>
     </div>
     <!-- World Count Section End -->
 
     <!-- Write your name under the para tag -->
-     <div class="copyright column">
+    <div class="copyright column">
         <p class="copyrightTex">&copy; CSTS</p>
-     </div>
-    
+    </div>
+
 
 </body>
 
