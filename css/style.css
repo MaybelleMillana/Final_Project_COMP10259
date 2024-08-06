@@ -1,0 +1,547 @@
+/* Designing overall page*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+/*error*/
+.error1{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+.success{
+    color: green;
+    font-size: larger;
+    font-weight: bold;
+}
+.errorInput{
+    box-shadow: 4px 3px 5px rgb(255 9 9 / 50%);
+    border-color: red;
+}
+/*Setting Up CSS Box Model*/
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+/*form*/
+.ColumnStyle2{
+	
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+	display: flex;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.formCont{
+	margin: 5%;
+	display: flex;
+}
+.form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin:auto;
+   margin-top:50px;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.animated-title {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+/*animation of the title*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/*animation of the menu*/
+.navbar {
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    color: #ffffff;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeInWave 0.5s forwards;
+}
+.navbar li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.navbar li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.navbar li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.navbar li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.navbar li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.navbar li:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.navbar li:nth-child(7) {
+    animation-delay: 3s;
+}
+
+@keyframes fadeInWave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Setting Up Body*/
+body{
+  margin:0;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #00b4d8, #0077b6, #023e8a, #03045e);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+ }
+.imgIco{
+	width: 40px;
+    height: 40px;
+}
+
+/*Designing Container Classes*/
+  .container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/* Designing Header */
+.header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s ease;
+    height: 90px;
+    background: #000043;
+}
+.titleHeader2{
+	text-align: center;
+    color: white;
+}
+.titleHeader{
+	text-align: center;
+    color: white;
+}
+.header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+}
+.header .fish-name{
+	padding:0 15px;
+}
+.header .fish-name a{
+	text-decoration: none;
+	font-size: 30px;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing:2px;
+	transition: all 0.5s ease;
+}
+.header.fixed .fish-name a{
+	color:#000000;
+}
+
+
+
+.header .navbar{
+	padding:0 15px;
+}
+.header .navbar ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.header .navbar ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.header .navbar ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color:#ffffff;
+	padding:25px 0;
+	display: block;
+	transition: all 0.5s ease;
+}
+.header.fixed .navbar ul li a{
+  color:#000000;
+}
+.header.fixed .navbar ul li a:hover,
+.header .nav ul li a:hover{
+	color:#FF9800;
+}
+
+/* Designing Home section */
+.home-section{
+    min-height: 500px;
+    background-image: url(../img/Flying-fish-2.jpg);
+    background-size: cover;
+    
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    margin: 90px 0px 0px 0px;
+}
+.ColumnStyle{
+	background: white;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+	display: flex;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.column {
+	flex: 1;
+	
+}
+/*text animation*/
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: fadeInSlideUp 2s ease-out;
+}
+/* Designing About section */
+.about-section{
+	display: block;
+    float: left;
+}
+.shadowText{
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+	float: left;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.imageHome{
+	float: right;
+    /* width: 30%; */
+    display: block;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* Designing Prey & Predators Section */
+
+.predators-section{
+	background: linear-gradient(to bottom, #00b4d8, #0077b6, #023e8a, #03045e);
+    color: white;
+    padding: 40px;
+	margin-top: 40px;
+	display: block;
+    float: left;
+}
+
+/* Designing Food Section */
+
+.gallery-section{
+	
+	display: block;
+    float: left;
+	text-align: center;
+    width: 100%;
+}
+.gallery{
+	display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 90%;
+            margin: auto;
+}
+.gallery img {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.gallery .row1 img {
+	height: 300px;
+}
+.gallery .row2 img {
+	height: 225px;
+   
+}
+.gallery .row2{
+	
+}
+/*overlay*/
+.photo-container {
+	position: relative;	
+	overflow: hidden;
+	border-radius: 10px;
+	
+}
+
+.centerPht{
+	width: 80%;
+    margin: auto;
+}
+
+.photo-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.photo-container:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+/* Designing World Count Section */
+
+.count-section{
+	padding: 80px 0 0;
+    display: block;
+    float: left;
+}
+.copyright{
+	text-align: center;
+	padding: 20px 0;
+	background: #000000;
+	color: white;
+	display: block;
+    float: left;
+	width: 100%;
+}
+.videoGallery{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba
+}
+.video-container {
+	flex: 1 1 100%;
+	
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.full-width {
+	flex: 1 1 100%;
+	max-width: 100%;
+}
+
+.honesty {
+    margin-top: 80px;
+    text-align: center;
+	color: white;
+	padding: 47px;
+}
+
+.honesty ul {
+    list-style: none;
+}
+
+.honesty ol {
+    list-style: none;
+}
+
+.honesty a {
+    color:teal;
+}
+/*responsive code*/
+/* For desktop screens */
+
+@media (min-width: 1024px) {
+    .shadowText {
+      width: 50%;
+    }
+    .imageHome{
+      width: 30%;
+      float: right
+    }
+
+  }
+  
+  /* For cellphone screens */
+  @media (max-width: 768px) {
+    .justify-content-between {
+        justify-content: space-around;
+        background-color: #000043;
+    }
+    .shadowText {
+      width: 100%;
+    }
+    .imageHome{
+      width: 100%;
+      float: left;
+    }
+    .photo-container{
+        width: 100%;
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-container{
+        
+    }
+  }
+
+  /* nav bar responsibe*/
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        width: 100%;
+    }
+    
+}
